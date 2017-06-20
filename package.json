@@ -1,0 +1,22 @@
+{
+  "name": "coffee-aws-iot-button",
+  "version": "1.0.0",
+  "description": "A coffee notification button to tell Labor Party members when fresh coffee is brewed, when it is out, and when Nitro Joes is out.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonbaseLabs/Coffee-AWS-IoT-Button.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoonbaseLabs/Coffee-AWS-IoT-Button/issues"
+  },
+  "homepage": "https://github.com/MoonbaseLabs/Coffee-AWS-IoT-Button#readme",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.14"
+  }
+}
