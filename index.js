@@ -6,13 +6,19 @@ exports.handler = function(event, context) {
 	
 	function determineClickEvent(event){
 		if (event.clickType === 'SINGLE'){
-			return(':coffee: is brewed! Come get a cup!');
+				singleClickEventItems = [
+					':coffee: is brewed! Come get a cup!',
+					'Reverie coffee is brewed!',
+					'Fresh covfefe ready in the break room! :wink:'
+				]
+				var randomSingleClickReturn = singleClickEventItems[Math.floor(Math.random()*singleClickEventItems.length)];
+				return(randomSingleClickReturn);
 		}
 		if (event.clickType === 'DOUBLE'){
 			return(':coffee: is all gone :(!');
 		}
 		if (event.clickType === 'LONG'){
-			return('Nitro Joes is out!');
+			return('Nitro Joes is out! Sound the alarm!');
 		}
 	};
 
