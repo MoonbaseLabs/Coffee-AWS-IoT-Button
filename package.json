@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/MoonbaseLabs/Coffee-AWS-IoT-Button#readme",
   "dependencies": {
-    "aws-iot-device-sdk": "^1.0.14",
     "request": "^2.81.0"
   }
 }

@@ -4,6 +4,7 @@ exports.handler = function(event, context) {
 
 	var postJsonBody = determineClickEvent(event);
 	
+	// Determine what click event is sent form the IoT button.
 	function determineClickEvent(event){
 		if (event.clickType === 'SINGLE'){
 				singleClickEventItems = [
@@ -15,13 +16,14 @@ exports.handler = function(event, context) {
 				return(randomSingleClickReturn);
 		}
 		if (event.clickType === 'DOUBLE'){
-			return(':coffee: is all gone :(!');
+			return('<!here> :coffee: is all gone :disappointed:!');
 		}
 		if (event.clickType === 'LONG'){
-			return('Nitro Joes is out! Sound the alarm!');
+			return('<!here> :rotating_light: Nitro Joes is out! Sound the alarm!: rotating_light:');
 		}
 	};
 
+	// Post to slack bot.
 	request.post(
 	'https://hooks.slack.com/services/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',
 		{ json: { text: postJsonBody} },
