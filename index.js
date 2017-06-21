@@ -7,9 +7,9 @@ exports.handler = function(event, context) {
 	function determineClickEvent(event){
 		if (event.clickType === 'SINGLE'){
 				singleClickEventItems = [
-					':coffee: is brewed! Come get a cup!',
-					'Reverie coffee is brewed!',
-					'Fresh covfefe ready in the break room! :wink:'
+					'<!here> :coffee: is brewed! Come get a cup!',
+					'<!here> Reverie coffee is brewed!',
+					'<!here> Fresh covfefe ready in the break room! :wink:'
 				]
 				var randomSingleClickReturn = singleClickEventItems[Math.floor(Math.random()*singleClickEventItems.length)];
 				return(randomSingleClickReturn);
