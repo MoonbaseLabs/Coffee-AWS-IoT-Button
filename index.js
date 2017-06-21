@@ -16,12 +16,12 @@ exports.handler = function(event, context) {
 				return(randomSingleClickReturn);
 		}
 		if (event.clickType === 'DOUBLE'){
-			return('<!here> :coffee: is all gone :disappointed:!');
+			return('<!here> Coffee pot is empty :disappointed:!');
 		}
 		if (event.clickType === 'LONG'){
-			return('<!here> :rotating_light: Nitro Joes is out! Sound the alarm!: rotating_light:');
+			return('<!here> :rotating_light: Nitro Joes is out! Sound the alarm! FYI <@jaraemyerslp> - :rotating_light:' );
 		}
-	};
+	}
 
 	// Post to slack bot.
 	request.post(
